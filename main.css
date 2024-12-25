@@ -1,0 +1,52 @@
+body{
+    background-color: #006699;
+    /* font-family: system-ui, -apple-system, sans-serif; */
+}
+form{
+    background-color: #0c3b57;
+    height: 50%;
+    width: 50%;
+    border-radius: 20px;
+
+}
+
+#container{
+    /* center the elements */
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    /* align-items: center; */
+
+    position: relative;
+    top: 17%;
+    width: 80%;
+}
+
+#container label{
+    color: #ffffff;
+    font-size: 15pt;
+}
+
+#container input{
+    height: 45px;
+    border-radius: 15px;
+    border: 1px white;
+}
+
+#container #name{
+    margin-bottom: 35px;
+    border-radius: 12px;
+}
+
+#Submit{
+    color: #ffffff;
+    background: linear-gradient(to right,#141cfc, #304cf4, #006699);
+    font-size: 12pt;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
