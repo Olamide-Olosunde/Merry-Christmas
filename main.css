@@ -1,57 +1,51 @@
 body{
-    background-color: #006699;
-    /* font-family: system-ui, -apple-system, sans-serif; */
-}
-form{
-    background-color: #0c3b57;
-    height: 50%;
-    width: 50%;
-    border-radius: 20px;
+    background: radial-gradient(#ffffff, #ef9a9a, #ff0000);
 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-#container{
-    /* center the elements */
+nav img{
+    max-height: 50px;
+    max-width: 50px;
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+section{
+    height: 100vh;
+    
+    font-family: 'Lucida Handwriting' , 'Apple Chancery' , 'Brush Script';
+    font-size: 75px;
+    align-items: center;
+
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-
-    position: relative;
-    top: 17%;
-    width: 80%;
-}
-
-#container label{
-    color: #ffffff;
-    font-size: 15pt;
-}
-
-#container input{
-    height: 45px;
-    border-radius: 15px;
-    border: 1px white;
-}
-
-#container #name{
-    margin-bottom: 35px;
-    border-radius: 12px;
-}
-
-#Submit{
-    color: #ffffff;
-    background: linear-gradient(to right,#141cfc, #304cf4, #006699);
-    font-size: 12pt;
-}
-
-main{
-    height: 100vh;
-    display: flex;
     justify-content: center;
-    align-items: center;
+    
+    color: #008000;
+    
+}
+
+section #box1{
+    display: flex;
+}
+
+section #box2{
+    display: flex;
+    transform: scale(2);
+}
+
+section .box{
+    display: none;
 }
 
 @media only screen and (max-width: 600px){
-    form{
-        width: 80%;
+    section{
+        font-size: 50px;
     }
 }

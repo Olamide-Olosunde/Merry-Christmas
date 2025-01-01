@@ -1,24 +1,18 @@
-form = document.getElementById('user');
-form.addEventListener("submit", event => {
-    event.preventDefault();
-
-    let name = document.getElementById('name');
-
-    switch( name.value.toLowerCase() )
-    {
-        default:
-            // store user's name
-            localStorage.setItem('Name', name.value);
-
-            //migrate to the next page (dec.html) --where all the work will be done
-            window.location.href = "dec.html";
-        break;
-
-    }
-
-    
-    
-    
-    
+//heartbeat
+let i = 0;
+document.addEventListener("DOMContentLoaded", function () {
+    const heart = document.getElementById('box2');
+    setInterval(()=>{
+        if( i % 2 === 1 )
+        {
+            heart.style.transform = 'scale(2)';
+        } else{
+            heart.style.transform = 'scale(1.5)';
+        }
+        i++;
+        //no integer overflows
+        if( i > 31 )
+            i = 0;
+    }, 500);
     
 });
